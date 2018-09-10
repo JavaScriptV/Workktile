@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h3>2222</h3>
+    <div class="zuologo">
+
+    </div>
   </div>
 </template>
 
@@ -19,10 +21,15 @@ export default {
 #app {
   flex-shrink: 0;
   position: relative;
-  width: 70px;
-  background: #22d7bb;
+  width: 100%;
+  height: 100%;
+  background: #333;
   overflow-y: hidden;
   box-sizing: border-box;
-  height: 600px;
+}
+.zuologo{
+  width: 70px;
+  height: 100%;
+  background: #22d7bb;
 }
 </style>
