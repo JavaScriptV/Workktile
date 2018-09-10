@@ -14,9 +14,34 @@ const xiaoxi = require('./components/xiaoxi/xiaoxi.vue');
 
 const r = [
   {
-    path:'/rili',
+    path:'/xiaoxi/',
+    component:xiaoxi.default,
+    name:'消息'
+  },
+  {
+    path:'/xiangmu/',
+    component:xiangmu.default,
+    name:'项目'
+  },
+  {
+    path:'/rili/',
     component:rili.default,
     name:'日历'
+  },
+  {
+    path:'/wangpan/',
+    component:wangpan.default,
+    name:'网盘'
+  },
+  {
+    path:'/tongxunlu/',
+    component:tongxunlu.default,
+    name:'通讯录'
+  },
+  {
+    // 如果用户随便输入地址，转到首页
+    path:'*',
+    redirect:'/xiaoxi/'
   }
 ]
 
@@ -33,6 +58,8 @@ const store = new Vuex.Store({
 new Vue({
   el: '#app',
   // render: h => h(App)
+  store,
+  router,
   components:{
     App
   }
