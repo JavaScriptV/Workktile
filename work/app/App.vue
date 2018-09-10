@@ -113,7 +113,7 @@ a{
   height: 100%;
   background: #22d7bb;
   overflow-y: hidden;
-    .logo{
+  .logo{
       a{
         margin: 18px 0;
         text-align: center;
@@ -150,7 +150,12 @@ a{
             transition: box-shadow .3s,-webkit-box-shadow .3s;
           a.app-item {
                 background: #18bfa4;
-            }  
+            }
+          &:hover{
+          background: #18bfa4;
+          text-decoration: none;
+          box-shadow: 0 0 2px 2px #18bfa4;
+        }    
             .ti{
                 margin-top: 15px;
                 display: inline-block;
@@ -165,6 +170,11 @@ a{
                   font-size: 30px;
                 }
             }
+            &:hover .ti{
+                opacity: 1;
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
             .name{
                 display: block;
                 height: 0;
@@ -177,6 +187,11 @@ a{
                 transition: height .5s,-webkit-transform .5s;
                 transition: height .5s,transform .5s;
                 transition: height .5s,transform .5s,-webkit-transform .5s;
+            }
+            &:hover .name{
+              height: auto;
+              -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
             }
           }
         }
@@ -202,6 +217,11 @@ a{
         transition: box-shadow .3s;
         transition: box-shadow .3s,-webkit-box-shadow .3s;
         background-color: transparent;
+        &:hover{
+          background: #18bfa4;
+          text-decoration: none;
+          box-shadow: 0 0 2px 2px #18bfa4;
+        }
         .ti{
           margin-top: 15px;
           display: inline-block;
@@ -216,6 +236,11 @@ a{
             font-size: 24px;
           }
         }
+        &:hover .ti{
+            opacity: 1;
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
         .name{
             display: block;
             height: 0;
@@ -228,6 +253,11 @@ a{
             transition: height .5s,-webkit-transform .5s;
             transition: height .5s,transform .5s;
             transition: height .5s,transform .5s,-webkit-transform .5s;
+        }
+        &:hover .name{
+              height: auto;
+              -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
         }
       }
     }
@@ -254,10 +284,18 @@ a{
       margin: 0 auto;
     }
   }
+  .router-link-active{
+    background: #18bfa4;
+}
 }
 
 .yopu{
   margin-left: 70px;
+  height: 100%;
+  width: calc(100% - 70px);
   color: white;
+}
+.router-link-active{
+    background: #18bfa4;
 }
 </style>

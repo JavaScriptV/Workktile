@@ -13,7 +13,6 @@ export default {
 <style lang = 'scss' scoped>
     div{
         height: 400px;
-        width: 100%;
         background-color: #ff0;
         h1{
             color: aqua;
